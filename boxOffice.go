@@ -67,8 +67,8 @@ func connectAndCollect(id string) bool {
 
 	json.Unmarshal([]byte(body), &movieMap) // Decode JSON format into our map.
 
-	string_ := formatData(movieMap["Title"], movieMap["Released"], movieMap["Runtime"], 
-						 movieMap["Metascore"], movieMap["BoxOffice"])
+	string_ := formatData(movieMap["Title"], movieMap["Released"], movieMap["Runtime"],
+		movieMap["Metascore"], movieMap["BoxOffice"], movieMap["Actors"], movieMap["Director"], movieMap["Writer"])
 
 	titles[index][0] = string_
 	index++
@@ -82,31 +82,35 @@ func checkForFields(_map map[string]string) bool {
 	}
 
 	if _map["Title"] == "N/A" || _map["Released"] == "N/A" ||
-		_map["Runtime"] == "N/A" || _map["imdbRating"] == "N/A" || strings.Contains(_map["BoxOffice"], "United States")  {
+		_map["Runtime"] == "N/A" || _map["imdbRating"] == "N/A" || strings.Contains(_map["BoxOffice"], "United States") {
 		return false
 	} else {
 		return true
 	}
 }
 
-func formatData(title string, year string, runtime string, score string, boxOffice string) string {
-	return fmt.Sprintf("%s,%s,%s,%s,%s", title, year, runtime, score, boxOffice)
+func formatData(title string, year string, runtime string, score string, boxOffice string,
+	cast string, director string, writer string) string {
+	return fmt.Sprintf("%s,%s,%s,%s,%s,%s,%s,%s", title, year, runtime, score,
+		boxOffice, strings.Replace(cast, ",", " ", -1), director, strings.Replace(cast, ",", " ", -1))
 }
 
 func main() {
 	findTitles()
 
 	csvFile, err := os.Create(fmt.Sprintf("%s.csv", "films"))
-	defer csvFile.Close()
 
 	if err != nil {
 		log.Fatalf("failed creating file: %s", err)
 	}
 
 	fileWriter := csv.NewWriter(csvFile)
-	fileWriter.Comma = '|'
-	//i := 1; i < 5; i++
+	fileWriter.Comma = '\t'
 
+	defer csvFile.Close()
+
+	//i := 1; i < 5; i++
+	fileWriter.Write([]string{"Title", "Release", "Runtime", "Metascore", "Box Office", "Cast", "Director", "Writer"})
 	for i := 0; i < len(titles); i++ {
 		a := titles[i]
 		fileWriter.Write(a[:])

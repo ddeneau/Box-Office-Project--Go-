@@ -1,21 +1,26 @@
-Title,Release,Runtime,Metascore,Gross,,,,,
-Matilda,2-Aug-96,102 min,72,33459416.00,,,,,
-In Search of Fellini,15-Sep-17,93 min,55,12772.00,,,,,
-Matilda,2-Aug-96,102 min,72,33459416.00,,,,,
-She's Gotta Have It,8-Aug-86,84 min,79,7137502.00,,,,,
-Shrink,6-Aug-09,104 min,40,189621.00,,,,,
-The Breakfast Club,15-Feb-85,97 min,66,45875171.00,,,,,
-Weird Science,2-Aug-85,94 min,46,2383448.00,,,,,
-Can't Buy Me Love,14-Aug-87,94 min,36,31623822.00,,,,,
-xXx: State of the Union,29-Apr-05,101 min,37,26873932.00,,,,,
-Guardians of the Galaxy,1-Aug-14,121 min,76,333718600.00,,,,,
-Back to the Future,3-Jul-85,116 min,87,212836762.00,,,,,
-Madagascar,27-May-05,86 min,57,193595521.00,,,,,
-Requiem for a Dream,15-Dec-00,102 min,68,3635482.00,,,,,
-Jojo Rabbit,8-Nov-19,108 min,58,33370906.00,,,,,
-Old,23-Jul-21,108 min,55,48276510.00,,,,,
-Grown Ups,25-Jun-10,102 min,30,1621186.00,,,,,
-Goodfellas,21-Sep-90,145 min,90,46909721.00,,,,,
-Se7en,22-Sep-95,127 min,65,100125643.00,,,,,
-Good Time,25-Aug-17,102 min,80,226499.00,,,,,
-Little Women,25-Dec-19,135 min,91,108101214.00,,,,,
+Title	Release	Runtime	Metascore	Box Office	Cast	Director	Writer
+Matilda,02 Aug 1996,102 min,72,$33,459,416,Danny DeVito  Rhea Perlman  Mara Wilson,Danny DeVito,Danny DeVito  Rhea Perlman  Mara Wilson
+In Search of Fellini,15 Sep 2017,93 min,55,$12,772,Ksenia Solo  Maria Bello  Jay Kunzi,Taron Lexton,Ksenia Solo  Maria Bello  Jay Kunzi
+Matilda,02 Aug 1996,102 min,72,$33,459,416,Danny DeVito  Rhea Perlman  Mara Wilson,Danny DeVito,Danny DeVito  Rhea Perlman  Mara Wilson
+She's Gotta Have It,08 Aug 1986,84 min,79,$7,137,502,Tracy Camilla Johns  Tommy Redmond Hicks  John Canada Terrell,Spike Lee,Tracy Camilla Johns  Tommy Redmond Hicks  John Canada Terrell
+Shrink,06 Aug 2009,104 min,40,$189,621,Kevin Spacey  Mark Webber  Keke Palmer,Jonas Pate,Kevin Spacey  Mark Webber  Keke Palmer
+The Breakfast Club,15 Feb 1985,97 min,66,$45,875,171,Emilio Estevez  Judd Nelson  Molly Ringwald,John Hughes,Emilio Estevez  Judd Nelson  Molly Ringwald
+Weird Science,02 Aug 1985,94 min,46,$23,834,048,Anthony Michael Hall  Ilan Mitchell-Smith  Kelly LeBrock,John Hughes,Anthony Michael Hall  Ilan Mitchell-Smith  Kelly LeBrock
+Can't Buy Me Love,14 Aug 1987,94 min,36,$31,623,833,Patrick Dempsey  Amanda Peterson  Courtney Gains,Steve Rash,Patrick Dempsey  Amanda Peterson  Courtney Gains
+xXx: State of the Union,29 Apr 2005,101 min,37,$26,873,932,Ice Cube  Samuel L. Jackson  Willem Dafoe,Lee Tamahori,Ice Cube  Samuel L. Jackson  Willem Dafoe
+Guardians of the Galaxy,01 Aug 2014,121 min,76,$333,718,600,Chris Pratt  Vin Diesel  Bradley Cooper,James Gunn,Chris Pratt  Vin Diesel  Bradley Cooper
+Back to the Future,03 Jul 1985,116 min,87,$212,836,762,Michael J. Fox  Christopher Lloyd  Lea Thompson,Robert Zemeckis,Michael J. Fox  Christopher Lloyd  Lea Thompson
+Madagascar,27 May 2005,86 min,57,$193,595,521,Chris Rock  Ben Stiller  David Schwimmer,Eric Darnell, Tom McGrath,Chris Rock  Ben Stiller  David Schwimmer
+Requiem for a Dream,15 Dec 2000,102 min,68,$3,635,482,Ellen Burstyn  Jared Leto  Jennifer Connelly,Darren Aronofsky,Ellen Burstyn  Jared Leto  Jennifer Connelly
+Jojo Rabbit,08 Nov 2019,108 min,58,$33,370,906,Roman Griffin Davis  Thomasin McKenzie  Scarlett Johansson,Taika Waititi,Roman Griffin Davis  Thomasin McKenzie  Scarlett Johansson
+Old,23 Jul 2021,108 min,55,$48,276,510,Gael García Bernal  Vicky Krieps  Rufus Sewell,M. Night Shyamalan,Gael García Bernal  Vicky Krieps  Rufus Sewell
+Grown Ups,25 Jun 2010,102 min,30,$162,001,186,Adam Sandler  Salma Hayek  Kevin James,Dennis Dugan,Adam Sandler  Salma Hayek  Kevin James
+Goodfellas,21 Sep 1990,145 min,90,$46,909,721,Robert De Niro  Ray Liotta  Joe Pesci,Martin Scorsese,Robert De Niro  Ray Liotta  Joe Pesci
+Se7en,22 Sep 1995,127 min,65,$100,125,643,Morgan Freeman  Brad Pitt  Kevin Spacey,David Fincher,Morgan Freeman  Brad Pitt  Kevin Spacey
+Good Time,25 Aug 2017,102 min,80,$2,026,499,Robert Pattinson  Benny Safdie  Jennifer Jason Leigh,Benny Safdie, Josh Safdie,Robert Pattinson  Benny Safdie  Jennifer Jason Leigh
+Little Women,25 Dec 2019,135 min,91,$108,101,214,Saoirse Ronan  Emma Watson  Florence Pugh,Greta Gerwig,Saoirse Ronan  Emma Watson  Florence Pugh
+
+
+
+
+
