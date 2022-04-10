@@ -37,7 +37,7 @@ func findTitles() {
 			i = 0
 		}
 
-		if connectAndCollect(currentID) == false {
+		if !connectAndCollect(currentID) {
 			i--
 			index--
 			continue
@@ -50,7 +50,7 @@ func findTitles() {
 func connectAndCollect(id string) bool {
 	movieMap := make(map[string]string) // Create Map
 
-	url := fmt.Sprintf("http://www.omdbapi.com/?i=%s&apikey=f27c112f&type=movie", id) // Establish URL
+	url := fmt.Sprintf("http://www.omdbapi.com/?i=%s&apikey=6110282&type=movie", id) // Establish URL
 
 	req, _ := http.NewRequest("GET", url, nil) // Establish Request.
 
@@ -91,8 +91,13 @@ func checkForFields(_map map[string]string) bool {
 
 func formatData(title string, year string, runtime string, score string, boxOffice string,
 	cast string, director string, writer string) string {
+
 	return fmt.Sprintf("%s,%s,%s,%s,%s,%s,%s,%s", title, year, runtime, score,
-		boxOffice, strings.Replace(cast, ",", " ", -1), director, strings.Replace(cast, ",", " ", -1))
+		strings.Replace(boxOffice, ",", "", -1),
+		strings.Replace(cast, ",", "", -1),
+		strings.Replace(director, ",", "", -1),
+		strings.Replace(writer, ",", "", -1))
+
 }
 
 func main() {
@@ -105,7 +110,6 @@ func main() {
 	}
 
 	fileWriter := csv.NewWriter(csvFile)
-	fileWriter.Comma = '\t'
 
 	defer csvFile.Close()
 
